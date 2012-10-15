@@ -20,7 +20,6 @@ var config = {
   detailedErrors: false
 , hostname: null
 , port: 4000
-/* TODO: Define a defaultAdapter. You can use postgresdb, memory, mongo or riak. 
 , model: {
     defaultAdapter: 'mongo'
 	}
@@ -29,7 +28,6 @@ var config = {
       dbname: 'local'
     }
   }
- */
 , sessions: {
     store: 'cookie'
   , key: 'sid'
