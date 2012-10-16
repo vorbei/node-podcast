@@ -13,3 +13,6 @@ if (geddy.config.environment != 'development') {
   });
 }
 
+geddy.podcasts = [];
+geddy.model.adapter = {};
+geddy.model.adapter.Podcast = require( process.cwd() + '/lib/model_adapters/podcast' ).Podcast;
