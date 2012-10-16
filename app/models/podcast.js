@@ -10,10 +10,11 @@ var Podcast = function () {
     feedUrl:  {type:'string',   required: true  },
     artwork:  {type:'string'},
     // Metas
-    updated:  {type:'datetime', required: true  },
-
-    //
+    updated:  {type:'datetime', required: true  }
   });
+
+  this.validatesPresent('title');
+  this.validatesPresent('feedUrl');
 
   this.autoIncrementId = true;
 };
